@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex.css 弹性盒子布局</title>
+	<link rel="stylesheet" href="css/flex.css">
+	<style type="text/css">
+		*{margin:0; padding:0; color:#fff;}
+		a{ text-decoration: none; }
+		ol,ul,li{ list-style-type:none; }
+		body{ background-color:#646de2; font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;}
+		.fork-github {position: absolute; right: 0; top: 0;z-index: 9;}
+		.top{ text-align:center; padding:100px 0;}
+		.top h1{ font-size:60px;  margin-bottom:20px;}
+		.top span{ font-size:30px; }
+		.bgcolor1{ background-color:#548b27; }
+		.bgcolor2{ background-color:#000; }
+		.bgcolor3{ background-color:#c54c77; }
+		.bgcolor4{ background-color:#835e3b; }
+		.bgcolor5{ background-color:#a345b7; }
+		.bgcolor6{ background-color:#f00; }
+		.container{ width:1200px; margin:0 auto; }
+		.item{ padding:20px 0 50px; border-bottom:1px solid #90b2ff; }
+		.item .title{ height:80px; line-height:80px; font-size:30px;}
+		.display-flex{ background-color:#fff; margin-bottom:40px;}
+		.display-flex div{ height:50px; line-height:50px; text-align:center; font-size:18px;}
+	</style>
+</head>
+<body>
+	<div class="fork-github">
+		<a target="_blank" href="https://github.com/yaob421123/flex.css"><img src="forkmeongithub.png" data-lang-cn="forkmeongithub_cn.png" data-lang-jp="forkmeongithub_jp.png"></a>
+	</div>
+	<div class="top">
+		<h1>flex.css</h1>
+		<span>弹性盒子布局</span>
+	</div>
+	<div class="container">
+		<div class="item">
+			<div class="title">.display-flex</div>
+			<div class="display-flex">
+				<div class="bgcolor1" style="width: 300px">width:300px</div>
+				<div class="bgcolor2 flex-2">.flex-2</div>
+				<div class="bgcolor3 flex-1">.flex-1</div>
+			</div>
+			<div class="display-flex">
+				<div class="bgcolor1" style="width:300px; margin-right:10px;">width:300px; margin-right:10px;</div>
+				<div class="bgcolor2 flex-1">.flex-1</div>
+				<div class="bgcolor3" style="width:300px; margin-left:10px;">width:300px; margin-left:10px;</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-row</div>
+			<div class="display-flex flex-row">
+				<div class="bgcolor1 flex-1">.flex-1</div>
+				<div class="bgcolor2 flex-2">.flex-2</div>
+				<div class="bgcolor3 flex-3">.flex-3</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-row-r</div>
+			<div class="display-flex flex-row-r">
+				<div class="bgcolor1 flex-1">.flex-1</div>
+				<div class="bgcolor2 flex-2">.flex-2</div>
+				<div class="bgcolor3 flex-3">.flex-3</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-column</div>
+			<div class="display-flex flex-column">
+				<div class="bgcolor1 flex-1">.flex-1</div>
+				<div class="bgcolor2 flex-2">.flex-2</div>
+				<div class="bgcolor3 flex-3">.flex-3</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-column-r</div>
+			<div class="display-flex flex-column-r">
+				<div class="bgcolor1 flex-1">.flex-1</div>
+				<div class="bgcolor2 flex-2">.flex-2</div>
+				<div class="bgcolor3 flex-3">.flex-3</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-wrap-n</div>
+			<div class="display-flex flex-wrap-n">
+				<div class="bgcolor1" style="width: 150px">width:150px;</div>
+				<div class="bgcolor2" style="width: 350px">width:350px;</div>
+				<div class="bgcolor3" style="width: 500px">width:500px;</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-wrap</div>
+			<div class="display-flex flex-wrap" style="width: 900px">
+				<div class="bgcolor1" style="width: 150px">width:150px;</div>
+				<div class="bgcolor2" style="width: 350px">width:350px;</div>
+				<div class="bgcolor3" style="width: 500px">width:500px;</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-justify-r</div>
+			<div class="display-flex flex-justify-r">
+				<div class="bgcolor1" style="width: 150px">width:150px;</div>
+				<div class="bgcolor2" style="width: 350px">width:350px;</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-justify-c</div>
+			<div class="display-flex flex-justify-c">
+				<div class="bgcolor1" style="width: 150px">width:150px;</div>
+				<div class="bgcolor2" style="width: 350px">width:350px;</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-justify-s</div>
+			<div class="display-flex flex-justify-s">
+				<div class="bgcolor1" style="width: 150px">width:150px;</div>
+				<div class="bgcolor2" style="width: 350px">width:350px;</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-justify-a</div>
+			<div class="display-flex flex-justify-a">
+				<div class="bgcolor1" style="width: 150px">width:150px;</div>
+				<div class="bgcolor2" style="width: 350px">width:350px;</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			<div class="display-flex" style="height: 100px">
+				<div class="bgcolor1 flex-1 flex-align-s">.flex-1 .flex-align-s</div>
+				<div class="bgcolor2 flex-1 flex-align-e">.flex-1 .flex-align-e</div>
+				<div class="bgcolor3 flex-1 flex-align-c">.flex-1 .flex-align-c</div>
+				<div class="bgcolor4 flex-1 flex-align-a">.flex-1 .flex-align-a</div>
+				<div class="bgcolor5 flex-1 flex-align-b">.flex-1 .flex-align-b</div>
+				<!-- <div class="bgcolor6 flex-1" style="align-self:stretch; height: auto">align-self:stretch;<br/> height: auto</div> -->
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-items-e</div>
+			<div class="display-flex flex-items-e" style="height: 100px">
+				<div class="bgcolor1 flex-1">.flex-1</div>
+				<div class="bgcolor2 flex-1" style="width: 350px">.flex-1</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-items-c</div>
+			<div class="display-flex flex-items-c" style="height: 100px">
+				<div class="bgcolor1 flex-1">.flex-1</div>
+				<div class="bgcolor2 flex-1" style="width: 350px">.flex-1</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">.display-flex&nbsp;&nbsp;&nbsp;&nbsp;.flex-items-s</div>
+			<div class="display-flex flex-items-s" style="height: 100px">
+				<div class="bgcolor1 flex-1" style="height: 80px;">.flex-1</div>
+				<div class="bgcolor2 flex-1" style="min-height: 20px;">.flex-1</div>
+				<div class="bgcolor3 flex-1" style="max-height: 90px;height: auto">.flex-1</div>
+				<div class="bgcolor4 flex-1" style="height: auto">.flex-1</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
