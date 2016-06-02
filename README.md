@@ -5,6 +5,10 @@
 # 开发
 
 ```bash
+npm install
+```
+
+```bash
 gulp watch
 ```
 
