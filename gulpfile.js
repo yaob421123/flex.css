@@ -8,7 +8,6 @@ var minifycss = require('gulp-minify-css');
 
 gulp.task('watch', function (cb) {
     gulp.watch('./styl/*',  ['styl']);
-
 });
 gulp.task('styl', function () {
     gulp.src('./styl/*.styl')
